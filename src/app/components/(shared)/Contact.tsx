@@ -4,14 +4,28 @@ import profilePic from "../../../public/images/introduce.jpg";
 
 const Contact: FunctionComponent = () => {
   return (
-    <>
-      <div>
-        아이콘
+    <div className="contact-container">
+      <div className="contact-box">
         <Image src={profilePic} alt="introduce" width={20} height={20} />
-        <h2>Github: </h2>
-        <span>blabla</span>
+        <h5>Email. </h5>
+        <span>linklinklinklinklink</span>
       </div>
-    </>
+      <div className="contact-box">
+        <Image src={profilePic} alt="introduce" width={20} height={20} />
+        <h5>Github. </h5>
+        <span>linklinklinklinklink</span>
+      </div>
+      <div className="contact-box">
+        <Image src={profilePic} alt="introduce" width={20} height={20} />
+        <h5>Blog. </h5>
+        <span>linklinklinklinklink</span>
+      </div>
+      <div className="contact-box">
+        <Image src={profilePic} alt="introduce" width={20} height={20} />
+        <h5>Resume. </h5>
+        <span>linklinklinklinklink</span>
+      </div>
+    </div>
   );
 };
 

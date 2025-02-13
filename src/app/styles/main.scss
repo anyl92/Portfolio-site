@@ -1,4 +1,86 @@
 body {
-  width: 100%
+  padding: 100px;
 }
 
+.title-container {
+  height: 200vh;
+  position: relative;
+
+  .title-name {
+    font-size: 100px;
+  }
+  .title-image-box {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    overflow: hidden;
+    width: 240px;
+    height: 240px;
+    border-radius: 240px;
+  }
+}
+
+.contact-container { 
+  width: 240px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: fixed;
+  right: 100px;
+  top: 500px;
+  
+  .contact-box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+.keyword-container {
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+}
+
+.experience-container {
+  height: 100vh;
+
+  .experience-top-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+    div {
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+.skills-container {
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.projects-container {
+  height: 100vh;
+  text-align: center;
+
+  .projects-title {
+    font-size: 80px;
+  }
+  .projects-contents {
+    display: flex;
+
+  }
+}
+
+.lessonlearn-container {
+  height: 100vh;
+}
+.ending-container {
+  height: 100vh;
+}
