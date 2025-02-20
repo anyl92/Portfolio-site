@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { FunctionComponent } from "react";
 import profilePic from "../../../public/images/introduce.jpg";
+import { forwardRef } from "react";
 
-const Contact: FunctionComponent = () => {
+const Contact = forwardRef<HTMLDivElement, { isFixed: boolean }>(({ isFixed }, ref) => {
   return (
-    <div className="contact-container">
+    <div className={`contact-container ${isFixed ? "fixed" : "sticky"}`} ref={ref}>
       <div className="contact-box">
         <Image src={profilePic} alt="introduce" width={20} height={20} />
         <h5>Email. </h5>
@@ -27,6 +27,6 @@ const Contact: FunctionComponent = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Contact;
